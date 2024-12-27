@@ -14,8 +14,10 @@ app.use(
 
 app.use(express.json());
 
-app.use("/", inventoryRoutes);
+app.use("/api/v1", inventoryRoutes);
 
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur le port ${port}`);
 });
+
+export default app;
