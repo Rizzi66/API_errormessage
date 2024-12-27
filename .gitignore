@@ -1,0 +1,25 @@
+# Logs
+api/logs
+api/*.log
+api/npm-debug.log*
+api/yarn-debug.log*
+api/yarn-error.log*
+api/pnpm-debug.log*
+api/lerna-debug.log*
+
+api/node_modules
+api/dist
+api/dist-ssr
+api/*.local
+api/.env
+
+# Editor directories and files
+api/.vscode/*
+api/!.vscode/extensions.json
+api/.idea
+api/.DS_Store
+api/*.suo
+api/*.ntvs*
+api/*.njsproj
+api/*.sln
+api/*.sw?
