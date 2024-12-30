@@ -6,15 +6,11 @@ const dotenv = require("dotenv").config().parsed;
 const app = express();
 const port = 3000;
 
-app.use(
-  cors({
-    origin: dotenv.URL_FRONTEND_SHOPIFY,
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
-app.use("/", inventoryRoutes);
+app.use("/api/", inventoryRoutes);
 
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur le port ${port}`);
